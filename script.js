@@ -39,3 +39,5 @@ sr.reveal('.section__header', { interval: 200 });
 sr.reveal('.expertise__card', { interval: 200 });
 sr.reveal('.project__card', { interval: 200 });
 sr.reveal('.timeline__item', { interval: 200, origin: 'left' });
+
+
