@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="style.css" />
+    
+    <title>Franck Mboutou | Data Engineer & DataOps Engineer </title>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="container nav__container">
+            <a href="#" class="nav__logo">Franck<span>.Data</span></a>
+            
+            <ul class="nav__links" id="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#portfolio">Projets</a></li>
+                <li><a href="#stack">Stack</a></li>
+                <li><a href="#parcours">Parcours</a></li>
+            </ul>
+
+            <div class="nav__actions">
+                <a href="#contact" class="btn btn-primary desktop-only">Me contacter</a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-3-line"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="container hero__container">
+            <div class="hero__content">
+                <div class="hero__badge">Disponible pour opportunités</div>
+                <h1>Data Engineer<br> <span class="gradient-text">DataOps Engineer</span></h1>
+                <p class="hero__description">
+                    Je suis <strong>Franck Mboutou</strong>, Data Engineer passionné. <br>
+                    Je transforme des volumes massifs de données en insights exploitables grâce à des architectures distribuées robustes (Kafka, Spark) et des pipelines automatisés (Airflow, CI/CD).
+                </p>
+                
+                <div class="hero__btns">
+                    <a href="#portfolio" class="btn btn-primary">Voir mes projets <i class="ri-arrow-right-line"></i></a>
+                    <a href="assets/INGMboutouData.pdf" class="btn btn-outline" download>Télécharger CV <i class="ri-download-cloud-line"></i></a>
+                </div>
+
+                <div class="hero__stats">
+                    <div class="stat">
+                        <span class="stat__num">1+</span>
+                        <span class="stat__desc">Années d'Exp.</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__num">5+</span>
+                        <span class="stat__desc">Projets Data</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__num">100%</span>
+                        <span class="stat__desc">Passion Tech</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero__visual">
+                <div class="visual__bg"></div>
+                <img src="assets/images/my-avatar.png" alt="Franck Mboutou" class="hero__img">
+                
+                <div class="float-card card-1">
+                    <i class="ri-database-2-fill"></i>
+                    <div>
+                        <span>Cloud </span>
+                        <small>AWS</small>
+                    </div>
+                </div>
+                <div class="float-card card-2">
+                    <i class="ri-cloud-fill"></i>
+                    <div>
+                        <span>Big Data</span>
+                        <small>Spark, Kafka & Airflow</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="expertise" class="section">
+        <div class="container">
+            <div class="section__header text-center">
+                <h2 class="section__title">Mon Expertise Technique</h2>
+                <p class="section__subtitle">Une approche moderne du Data Engineering combinant robustesse et scalabilité.</p>
+            </div>
+
+            <div class="expertise__grid">
+                <div class="expertise__card">
+                    <div class="icon-box"><i class="ri-server-line"></i></div>
+                    <h3>Data Architecture</h3>
+                    <p>Conception de Data Lakes et Warehouses modernes (Lakehouse). Modélisation dimensionnelle et optimisation du stockage.</p>
+                    <ul class="tech-list">
+                        <li>Delta Lake</li>
+                        <li>Snowflake</li>
+                        <li>S3/HDFS</li>
+                    </ul>
+                </div>
+
+                <div class="expertise__card">
+                    <div class="icon-box"><i class="ri-flow-chart"></i></div>
+                    <h3>Data Pipelines</h3>
+                    <p>Développement de pipelines ETL/ELT batch et streaming haute performance. Ingestion et transformation de données complexes.</p>
+                    <ul class="tech-list">
+                        <li>Spark</li>
+                        <li>Kafka</li>
+                        <li>Airflow</li>
+                    </ul>
+                </div>
+
+                <div class="expertise__card">
+                    <div class="icon-box"><i class="ri-tools-line"></i></div>
+                    <h3>DataOps & Cloud</h3>
+                    <p>Automatisation, orchestration et monitoring. Infrastructure as Code et CI/CD pour des déploiements fiables.</p>
+                    <ul class="tech-list">
+                        <li>Airflow</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section bg-light">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Projets Récents</h2>
+                <a href="https://github.com/FranckRuissel" target="_blank" class="link-arrow">Voir tout sur GitHub <i class="ri-arrow-right-line"></i></a>
+            </div>
+
+            <div class="projects__grid">
+                <article class="project__card">
+                    <div class="project__image">
+                        <img src="assets/images/project-kappa.jpg" alt="Architecture Kappa">
+                        <div class="project__overlay">
+                            <a href="https://github.com/FranckRuissel/DATA-STREAM-PLATFORM" target="_blank" class="btn-icon" title="Voir le Code"><i class="ri-github-fill"></i></a>
+                            <a href="https://www.linkedin.com/in/franck-mboutou" target="_blank" class="btn-icon" title="Voir la Démo"><i class="ri-linkedin-fill"></i></a>
+                        </div>
+                    </div>
+                    <div class="project__content">
+                        <div class="project__meta">Streaming</div>
+                        <h3>Real-Time Financial Engine</h3>
+                        <p>Pipeline Kappa traitant +1k transactions/sec. Ingestion Kafka, agrégations Spark Streaming et stockage ACID Delta Lake.</p>
+                        <div class="project__tags">
+                            <span>Kafka</span><span>Spark Streaming</span><span>MinIO/S3</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project__card">
+                  <div class="project__image">
+                        <img src="assets/images/project-elk.jpg" alt="ELK Stack Monitoring">
+                        <div class="project__overlay">
+                          <a href="https://github.com/FranckRuissel/eltk-kafka-pipeline.git" target="_blank" class="btn-icon" title="Voir le Code"><i class="ri-github-fill"></i></a>
+                          <a href="https://www.linkedin.com/in/franck-mboutou" target="_blank" class="btn-icon" title="Voir le Post"><i class="ri-linkedin-fill"></i></a>
+                        </div>
+                  </div>
+                  <div class="project__content">
+                    <div class="project__meta">Monitoring</div>
+                      <h3>Log Monitoring Platform</h3>
+                      <p>Centralisation et visualisation des logs en temps réel. Pipeline complet avec Kafka, Logstash, Elasticsearch et Dashboards Kibana.</p>
+                    <div class="project__tags">
+                        <span>Elastic</span><span>Logstash</span><span>Kibana</span><span>Kafka</span>
+                  </div>
+                 </div>
+                </article>                        
+
+                <article class="project__card">
+                    <div class="project__image">
+                        <img src="assets/images/project-airflow.jpg" alt="Airflow ETL">
+                        <div class="project__overlay">
+                            <a href="https://github.com/FranckRuissel" target="_blank" class="btn-icon" title="Voir le Code"><i class="ri-github-fill"></i></a>
+                            <a href="https://www.linkedin.com/in/franck-mboutou" target="_blank" class="btn-icon" title="Voir le Post"><i class="ri-linkedin-fill"></i></a>
+                        </div>
+                    </div>
+                    <div class="project__content">
+                        <div class="project__meta">Orchestration</div>
+                        <h3>Modern Data Stack ETL</h3>
+                        <p>Orchestration complète d'un entrepôt de données : Ingestion Airflow.</p>
+                        <div class="project__tags">
+                            <span>Airflow</span><span>Python</span><span>PostgreSQL</span><span>Docker</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="stack" class="section">
+        <div class="container">
+            <div class="section__header text-center">
+                <h2 class="section__title">Stack Technologique</h2>
+                <p class="section__subtitle">Les outils que je maîtrise au quotidien.</p>
+            </div>
+
+            <div class="tech__grid">
+                
+                <div class="tech__card">
+                    <div class="tech__header">
+                        <i class="ri-code-box-line"></i>
+                        <h4>Langages & Core</h4>
+                    </div>
+                    <div class="tech__items">
+                        <div class="tech__item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                            <span>Python</span>
+                        </div>
+                        <div class="tech__item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="SQL">
+                            <span>SQL</span>
+                        </div>
+            
+                        <div class="tech__item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI">
+                            <span>FastAPI</span>
+                        </div>
+                        
+                        <div class="tech__item">
+                              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask">
+                              <span>Flask</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tech__card">
+                    <div class="tech__header">
+                        <i class="ri-database-2-line"></i>
+                        <h4>Big Data & Streaming</h4>
+                    </div>
+                    <div class="tech__items">
+                        <div class="tech__item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachespark/apachespark-original.svg" alt="Spark">
+                            <span>Spark</span>
+                        </div>
+                        <div class="tech__item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" alt="Kafka">
+                            <span>Kafka</span>
+                        </div>
+                        <div class="tech__item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Confluent_logo.svg" alt="Confluent">
+                            <span>Confluent</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech__card">
+                    <div class="tech__header">
+                        <i class="ri-cloud-line"></i>
+                        <h4>Cloud & Platforms</h4>
+                    </div>
+                    <div class="tech__items">
+                        <div class="tech__item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS">
+                            <span>AWS</span>
+                        </div>
+                        <div class="tech__item">
+                            <img src="https://cdn.worldvectorlogo.com/logos/snowflake.svg" alt="Snowflake">
+                            <span>Snowflake</span>
+                        </div>
+                        <div class="tech__item">
+                            <img src="https://cdn.worldvectorlogo.com/logos/databricks-1.svg" alt="Databricks">
+                            <span>Databricks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech__card">
+                    <div class="tech__header">
+                        <i class="ri-settings-4-line"></i>
+                        <h4>Ops & Orchestration</h4>
+                    </div>
+                    <div class="tech__items">
+                        <div class="tech__item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                            <span>Docker</span>
+                        </div>
+                        <div class="tech__item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="K8s">
+                            <span>K8s</span>
+                        </div>
+                        <div class="tech__item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apacheairflow/apacheairflow-original.svg" alt="Airflow">
+                            <span>Airflow</span>
+                        </div>
+                        <div class="tech__item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dbt/dbt-original.svg" alt="dbt">
+                            <span>dbt</span>
+                        </div>
+                        <div class="tech__item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="GitLab">
+                            <span>GitLab</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech__card">
+                    <div class="tech__header">
+                        <i class="ri-bar-chart-grouped-line"></i>
+                        <h4>Observabilité & BI</h4>
+                    </div>
+                    <div class="tech__items">
+                        <div class="tech__item">
+                            <img src="https://cdn.worldvectorlogo.com/logos/elasticsearch.svg" alt="Elastic">
+                            <span>Elastic</span>
+                        </div>
+                        <div class="tech__item">
+                            <img src="https://cdn.worldvectorlogo.com/logos/kibana.svg" alt="Kibana">
+                            <span>Kibana</span>
+                        </div>
+                        <div class="tech__item">
+                            <img src="https://cdn.worldvectorlogo.com/logos/grafana.svg" alt="Grafana">
+                            <span>Grafana</span>
+                        </div>
+                        <div class="tech__item">
+                            <img src="https://cdn.worldvectorlogo.com/logos/power-bi.svg" alt="Power BI">
+                            <span>Power BI</span>
+                        </div>
+                        <div class="tech__item">
+                            <img src="https://cdn.worldvectorlogo.com/logos/tableau-software.svg" alt="Tableau">
+                            <span>Tableau</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="parcours" class="section bg-light">
+        <div class="container">
+            <h2 class="section__title text-center">Expérience & Formation</h2>
+            <div class="timeline">
+                <div class="timeline__item">
+                    <div class="timeline__date">2025</div>
+                    <div class="timeline__content">
+                        <h3>Master Data Engineering </h3>
+                        <span class="company">EFREI Paris</span>
+                    </div>
+                </div>
+                <div class="timeline__item">
+                    <div class="timeline__date">2024</div>
+                    <div class="timeline__content">
+                        <h3> Ingénieur Logiciel Junior (Data & Backend) </h3>
+                        <span class="company">3HCIG</span>
+                        <p>Développement d'APIs REST Flask pour la normalisation de données IoT. Optimisation des processus de collecte.</p>
+                    </div>
+                </div>
+                <div class="timeline__item">
+                    <div class="timeline__date">2023</div>
+                    <div class="timeline__content">
+                        <h3>Développeur Junior Data & Cloud</h3>
+                        <span class="company">ETech For Self-Worth</span>
+                        <p>Création de pipelines pour la collecte de séries temporelles environnementales. Déploiement sur MongoDB Atlas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container footer__container">
+            <div class="footer__col">
+                <a href="#" class="footer__logo">Franck<span>.Data</span></a>
+                <p>Data Engineer passionné par la construction de systèmes de données fiables et performants.</p>
+            </div>
+            
+            <div class="footer__col">
+                <h4>Contact</h4>
+                <ul class="footer__contact">
+                    <li><i class="ri-mail-line"></i> mboutoufranck@icloud.com</li>
+                    <li><i class="ri-map-pin-line"></i> Paris, France</li>
+                    <li><i class="ri-linkedin-box-line"></i> linkedin.com/in/franck-mboutou</li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4>Liens Rapides</h4>
+                <ul class="footer__nav">
+                    <li><a href="#expertise">Expertise</a></li>
+                    <li><a href="#portfolio">Projets</a></li>
+                    <li><a href="assets/INGMboutouData.pdf">Mon CV</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 Franck Mboutou. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
